@@ -1,0 +1,478 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun May 30 22:31:41 2021
+# Process ID: 92912
+# Current directory: E:/semestr8/SDUP/Projekt2/Zynq/Cenzor/Cenzor.runs/Cenzor_design_Cenzor_ip_0_0_synth_1
+# Command line: vivado.exe -log Cenzor_design_Cenzor_ip_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Cenzor_design_Cenzor_ip_0_0.tcl
+# Log file: E:/semestr8/SDUP/Projekt2/Zynq/Cenzor/Cenzor.runs/Cenzor_design_Cenzor_ip_0_0_synth_1/Cenzor_design_Cenzor_ip_0_0.vds
+# Journal file: E:/semestr8/SDUP/Projekt2/Zynq/Cenzor/Cenzor.runs/Cenzor_design_Cenzor_ip_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source Cenzor_design_Cenzor_ip_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/semestr8/SDUP/Projekt2/Zynq/ip_repo/Cenzor_ip_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado/Vivado/2018.3/data/ip'.
+Command: synth_design -top Cenzor_design_Cenzor_ip_0_0 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 93464 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 393.996 ; gain = 101.301
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Cenzor_design_Cenzor_ip_0_0' [e:/semestr8/SDUP/Projekt2/Zynq/Cenzor/Cenzor.srcs/sources_1/bd/Cenzor_design/ip/Cenzor_design_Cenzor_ip_0_0/synth/Cenzor_design_Cenzor_ip_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'Cenzor_ip_v1_0' [e:/semestr8/SDUP/Projekt2/Zynq/Cenzor/Cenzor.srcs/sources_1/bd/Cenzor_design/ipshared/cce3/hdl/Cenzor_ip_v1_0.v:4]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Cenzor_ip_v1_0_S00_AXI' [e:/semestr8/SDUP/Projekt2/Zynq/Cenzor/Cenzor.srcs/sources_1/bd/Cenzor_design/ipshared/cce3/hdl/Cenzor_ip_v1_0_S00_AXI.v:2]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [e:/semestr8/SDUP/Projekt2/Zynq/Cenzor/Cenzor.srcs/sources_1/bd/Cenzor_design/ipshared/cce3/hdl/Cenzor_ip_v1_0_S00_AXI.v:229]
+INFO: [Synth 8-226] default block is never used [e:/semestr8/SDUP/Projekt2/Zynq/Cenzor/Cenzor.srcs/sources_1/bd/Cenzor_design/ipshared/cce3/hdl/Cenzor_ip_v1_0_S00_AXI.v:370]
+INFO: [Synth 8-6157] synthesizing module 'Cenzor' [e:/semestr8/SDUP/Projekt2/Zynq/Cenzor/Cenzor.srcs/sources_1/bd/Cenzor_design/ipshared/cce3/hdl/Cenzor.sv:1]
+	Parameter numberOfWords bound to: 10 - type: integer 
+	Parameter defaultWordLength bound to: 15 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Word_Comparator' [e:/semestr8/SDUP/Projekt2/Zynq/Cenzor/Cenzor.srcs/sources_1/bd/Cenzor_design/ipshared/cce3/hdl/Word_Comparator.sv:3]
+	Parameter defaultWordLength bound to: 15 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Word_Comparator' (1#1) [e:/semestr8/SDUP/Projekt2/Zynq/Cenzor/Cenzor.srcs/sources_1/bd/Cenzor_design/ipshared/cce3/hdl/Word_Comparator.sv:3]
+WARNING: [Synth 8-6090] variable 'shiftRegister' is written by both blocking and non-blocking assignments, entire logic could be removed [e:/semestr8/SDUP/Projekt2/Zynq/Cenzor/Cenzor.srcs/sources_1/bd/Cenzor_design/ipshared/cce3/hdl/Cenzor.sv:75]
+WARNING: [Synth 8-6090] variable 'shiftRegister' is written by both blocking and non-blocking assignments, entire logic could be removed [e:/semestr8/SDUP/Projekt2/Zynq/Cenzor/Cenzor.srcs/sources_1/bd/Cenzor_design/ipshared/cce3/hdl/Cenzor.sv:75]
+WARNING: [Synth 8-6090] variable 'shiftRegister' is written by both blocking and non-blocking assignments, entire logic could be removed [e:/semestr8/SDUP/Projekt2/Zynq/Cenzor/Cenzor.srcs/sources_1/bd/Cenzor_design/ipshared/cce3/hdl/Cenzor.sv:75]
+WARNING: [Synth 8-6090] variable 'shiftRegister' is written by both blocking and non-blocking assignments, entire logic could be removed [e:/semestr8/SDUP/Projekt2/Zynq/Cenzor/Cenzor.srcs/sources_1/bd/Cenzor_design/ipshared/cce3/hdl/Cenzor.sv:75]
+WARNING: [Synth 8-6090] variable 'shiftRegister' is written by both blocking and non-blocking assignments, entire logic could be removed [e:/semestr8/SDUP/Projekt2/Zynq/Cenzor/Cenzor.srcs/sources_1/bd/Cenzor_design/ipshared/cce3/hdl/Cenzor.sv:75]
+WARNING: [Synth 8-6090] variable 'shiftRegister' is written by both blocking and non-blocking assignments, entire logic could be removed [e:/semestr8/SDUP/Projekt2/Zynq/Cenzor/Cenzor.srcs/sources_1/bd/Cenzor_design/ipshared/cce3/hdl/Cenzor.sv:75]
+WARNING: [Synth 8-6090] variable 'shiftRegister' is written by both blocking and non-blocking assignments, entire logic could be removed [e:/semestr8/SDUP/Projekt2/Zynq/Cenzor/Cenzor.srcs/sources_1/bd/Cenzor_design/ipshared/cce3/hdl/Cenzor.sv:75]
+WARNING: [Synth 8-6090] variable 'shiftRegister' is written by both blocking and non-blocking assignments, entire logic could be removed [e:/semestr8/SDUP/Projekt2/Zynq/Cenzor/Cenzor.srcs/sources_1/bd/Cenzor_design/ipshared/cce3/hdl/Cenzor.sv:75]
+WARNING: [Synth 8-6090] variable 'shiftRegister' is written by both blocking and non-blocking assignments, entire logic could be removed [e:/semestr8/SDUP/Projekt2/Zynq/Cenzor/Cenzor.srcs/sources_1/bd/Cenzor_design/ipshared/cce3/hdl/Cenzor.sv:75]
+WARNING: [Synth 8-6090] variable 'shiftRegister' is written by both blocking and non-blocking assignments, entire logic could be removed [e:/semestr8/SDUP/Projekt2/Zynq/Cenzor/Cenzor.srcs/sources_1/bd/Cenzor_design/ipshared/cce3/hdl/Cenzor.sv:75]
+WARNING: [Synth 8-6090] variable 'shiftRegister' is written by both blocking and non-blocking assignments, entire logic could be removed [e:/semestr8/SDUP/Projekt2/Zynq/Cenzor/Cenzor.srcs/sources_1/bd/Cenzor_design/ipshared/cce3/hdl/Cenzor.sv:75]
+WARNING: [Synth 8-6090] variable 'shiftRegister' is written by both blocking and non-blocking assignments, entire logic could be removed [e:/semestr8/SDUP/Projekt2/Zynq/Cenzor/Cenzor.srcs/sources_1/bd/Cenzor_design/ipshared/cce3/hdl/Cenzor.sv:75]
+WARNING: [Synth 8-6090] variable 'shiftRegister' is written by both blocking and non-blocking assignments, entire logic could be removed [e:/semestr8/SDUP/Projekt2/Zynq/Cenzor/Cenzor.srcs/sources_1/bd/Cenzor_design/ipshared/cce3/hdl/Cenzor.sv:75]
+WARNING: [Synth 8-6090] variable 'shiftRegister' is written by both blocking and non-blocking assignments, entire logic could be removed [e:/semestr8/SDUP/Projekt2/Zynq/Cenzor/Cenzor.srcs/sources_1/bd/Cenzor_design/ipshared/cce3/hdl/Cenzor.sv:75]
+WARNING: [Synth 8-6090] variable 'shiftRegister' is written by both blocking and non-blocking assignments, entire logic could be removed [e:/semestr8/SDUP/Projekt2/Zynq/Cenzor/Cenzor.srcs/sources_1/bd/Cenzor_design/ipshared/cce3/hdl/Cenzor.sv:76]
+INFO: [Synth 8-6155] done synthesizing module 'Cenzor' (2#1) [e:/semestr8/SDUP/Projekt2/Zynq/Cenzor/Cenzor.srcs/sources_1/bd/Cenzor_design/ipshared/cce3/hdl/Cenzor.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'Cenzor_ip_v1_0_S00_AXI' (3#1) [e:/semestr8/SDUP/Projekt2/Zynq/Cenzor/Cenzor.srcs/sources_1/bd/Cenzor_design/ipshared/cce3/hdl/Cenzor_ip_v1_0_S00_AXI.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'Cenzor_ip_v1_0' (4#1) [e:/semestr8/SDUP/Projekt2/Zynq/Cenzor/Cenzor.srcs/sources_1/bd/Cenzor_design/ipshared/cce3/hdl/Cenzor_ip_v1_0.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Cenzor_design_Cenzor_ip_0_0' (5#1) [e:/semestr8/SDUP/Projekt2/Zynq/Cenzor/Cenzor.srcs/sources_1/bd/Cenzor_design/ip/Cenzor_design_Cenzor_ip_0_0/synth/Cenzor_design_Cenzor_ip_0_0.v:57]
+WARNING: [Synth 8-3331] design Word_Comparator has unconnected port start
+WARNING: [Synth 8-3331] design Word_Comparator has unconnected port reset
+WARNING: [Synth 8-3331] design Cenzor_ip_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design Cenzor_ip_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design Cenzor_ip_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design Cenzor_ip_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design Cenzor_ip_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design Cenzor_ip_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 461.246 ; gain = 168.551
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 461.246 ; gain = 168.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 461.246 ; gain = 168.551
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 811.387 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 811.387 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.107 . Memory (MB): peak = 814.773 ; gain = 3.387
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 814.773 ; gain = 522.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 814.773 ; gain = 522.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 814.773 ; gain = 522.078
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 814.773 ; gain = 522.078
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	  14 Input     32 Bit       Adders := 10    
+	   2 Input      3 Bit       Adders := 10    
++---Registers : 
+	               32 Bit    Registers := 5     
+	                8 Bit    Registers := 166   
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   4 Input     32 Bit        Muxes := 4     
+	   2 Input     15 Bit        Muxes := 10    
+	  11 Input      8 Bit        Muxes := 59    
+	  12 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 44    
+	   2 Input      4 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 160   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Word_Comparator 
+Detailed RTL Component Info : 
++---Adders : 
+	  14 Input     32 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 15    
+Module Cenzor 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 166   
+	                1 Bit    Registers := 4     
++---Muxes : 
+	  11 Input      8 Bit        Muxes := 59    
+	  12 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 44    
+	   2 Input      1 Bit        Muxes := 5     
+Module Cenzor_ip_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   4 Input     32 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3331] design Word_Comparator has unconnected port start
+WARNING: [Synth 8-3331] design Word_Comparator has unconnected port reset
+WARNING: [Synth 8-3331] design Cenzor_design_Cenzor_ip_0_0 has unconnected port s00_axi_awprot[2]
+WARNING: [Synth 8-3331] design Cenzor_design_Cenzor_ip_0_0 has unconnected port s00_axi_awprot[1]
+WARNING: [Synth 8-3331] design Cenzor_design_Cenzor_ip_0_0 has unconnected port s00_axi_awprot[0]
+WARNING: [Synth 8-3331] design Cenzor_design_Cenzor_ip_0_0 has unconnected port s00_axi_arprot[2]
+WARNING: [Synth 8-3331] design Cenzor_design_Cenzor_ip_0_0 has unconnected port s00_axi_arprot[1]
+WARNING: [Synth 8-3331] design Cenzor_design_Cenzor_ip_0_0 has unconnected port s00_axi_arprot[0]
+INFO: [Synth 8-3886] merging instance 'inst/Cenzor_ip_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'inst/Cenzor_ip_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/Cenzor_ip_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/Cenzor_ip_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'inst/Cenzor_ip_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/Cenzor_ip_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 814.773 ; gain = 522.078
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 819.977 ; gain = 527.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 822.762 ; gain = 530.066
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 888.340 ; gain = 595.645
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 888.340 ; gain = 595.645
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 888.340 ; gain = 595.645
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 888.340 ; gain = 595.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 888.340 ; gain = 595.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 888.340 ; gain = 595.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 888.340 ; gain = 595.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     3|
+|2     |LUT2 |    53|
+|3     |LUT3 |    60|
+|4     |LUT4 |   464|
+|5     |LUT5 |   308|
+|6     |LUT6 |   603|
+|7     |FDRE |  1478|
+|8     |FDSE |     2|
++------+-----+------+
+
+Report Instance Areas: 
++------+--------------------------------+-----------------------+------+
+|      |Instance                        |Module                 |Cells |
++------+--------------------------------+-----------------------+------+
+|1     |top                             |                       |  2971|
+|2     |  inst                          |Cenzor_ip_v1_0         |  2971|
+|3     |    Cenzor_ip_v1_0_S00_AXI_inst |Cenzor_ip_v1_0_S00_AXI |  2971|
+|4     |      UnitUnderTest             |Cenzor                 |  2765|
++------+--------------------------------+-----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 888.340 ; gain = 595.645
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:42 ; elapsed = 00:00:48 . Memory (MB): peak = 888.340 ; gain = 242.117
+Synthesis Optimization Complete : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 888.340 ; gain = 595.645
+INFO: [Project 1-571] Translating synthesized netlist
+WARNING: [Netlist 29-101] Netlist 'Cenzor_design_Cenzor_ip_0_0' is not ideal for floorplanning, since the cellview 'Cenzor' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 894.180 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+129 Infos, 33 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 894.180 ; gain = 607.820
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 894.180 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/semestr8/SDUP/Projekt2/Zynq/Cenzor/Cenzor.runs/Cenzor_design_Cenzor_ip_0_0_synth_1/Cenzor_design_Cenzor_ip_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP Cenzor_design_Cenzor_ip_0_0, cache-ID = e93f8750224a80d0
+INFO: [Coretcl 2-1174] Renamed 3 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 894.180 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/semestr8/SDUP/Projekt2/Zynq/Cenzor/Cenzor.runs/Cenzor_design_Cenzor_ip_0_0_synth_1/Cenzor_design_Cenzor_ip_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Cenzor_design_Cenzor_ip_0_0_utilization_synth.rpt -pb Cenzor_design_Cenzor_ip_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun May 30 22:32:47 2021...

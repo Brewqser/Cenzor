@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# 
+# Start of session at: Sun May 30 23:22:02 2021
+# Process ID: 114820
+# Current directory: E:/semestr8/SDUP/Projekt2/Zynq/Cenzor/Cenzor.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: E:/semestr8/SDUP/Projekt2/Zynq/Cenzor/Cenzor.sdk/webtalk/webtalk.log
+# Journal file: E:/semestr8/SDUP/Projekt2/Zynq/Cenzor/Cenzor.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Cenzor_TB_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Cenzor_TB" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="87000001fs"></ZoomEndTime>
+      <Cursor1Time time="27600000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="280"></NameColumnWidth>
+      <ValueColumnWidth column_width="260"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="19" />
+   <wvobject fp_name="/Cenzor_TB/clock" type="logic">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Cenzor_TB/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Cenzor_TB/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Cenzor_TB/badLetterIn" type="array">
+      <obj_property name="ElementShortName">badLetterIn[7:0]</obj_property>
+      <obj_property name="ObjectShortName">badLetterIn[7:0]</obj_property>
+      <obj_property name="Radix">ASCIIRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Cenzor_TB/UnitUnderTest/badLetterIn" type="array">
+      <obj_property name="ElementShortName">badLetterIn[7:0]</obj_property>
+      <obj_property name="ObjectShortName">badLetterIn[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Cenzor_TB/badLetterProcess" type="logic">
+      <obj_property name="ElementShortName">badLetterProcess</obj_property>
+      <obj_property name="ObjectShortName">badLetterProcess</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Cenzor_TB/badLetterEnable" type="logic">
+      <obj_property name="ElementShortName">badLetterEnable</obj_property>
+      <obj_property name="ObjectShortName">badLetterEnable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Cenzor_TB/letterIn" type="array">
+      <obj_property name="ElementShortName">letterIn[7:0]</obj_property>
+      <obj_property name="ObjectShortName">letterIn[7:0]</obj_property>
+      <obj_property name="Radix">ASCIIRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Cenzor_TB/letterProcess" type="logic">
+      <obj_property name="ElementShortName">letterProcess</obj_property>
+      <obj_property name="ObjectShortName">letterProcess</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Cenzor_TB/letterEnable" type="logic">
+      <obj_property name="ElementShortName">letterEnable</obj_property>
+      <obj_property name="ObjectShortName">letterEnable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Cenzor_TB/letterOut" type="array">
+      <obj_property name="ElementShortName">letterOut[7:0]</obj_property>
+      <obj_property name="ObjectShortName">letterOut[7:0]</obj_property>
+      <obj_property name="Radix">ASCIIRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Cenzor_TB/badWord" type="array">
+      <obj_property name="ElementShortName">badWord[29:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">badWord[29:0][7:0]</obj_property>
+      <obj_property name="Radix">ASCIIRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Cenzor_TB/myString" type="array">
+      <obj_property name="ElementShortName">myString[79:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">myString[79:0][7:0]</obj_property>
+      <obj_property name="Radix">ASCIIRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Cenzor_TB/myStringCounter" type="array">
+      <obj_property name="ElementShortName">myStringCounter[31:0]</obj_property>
+      <obj_property name="ObjectShortName">myStringCounter[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Cenzor_TB/badWordCounter" type="array">
+      <obj_property name="ElementShortName">badWordCounter[31:0]</obj_property>
+      <obj_property name="ObjectShortName">badWordCounter[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Cenzor_TB/UnitUnderTest/badWords" type="array">
+      <obj_property name="ElementShortName">badWords[29:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">badWords[29:0][7:0]</obj_property>
+      <obj_property name="Radix">ASCIIRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Cenzor_TB/UnitUnderTest/shiftRegister" type="array">
+      <obj_property name="ElementShortName">shiftRegister[14:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">shiftRegister[14:0][7:0]</obj_property>
+      <obj_property name="Radix">ASCIIRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Cenzor_TB/UnitUnderTest/doBadLetterProcess" type="logic">
+      <obj_property name="ElementShortName">doBadLetterProcess</obj_property>
+      <obj_property name="ObjectShortName">doBadLetterProcess</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Cenzor_TB/UnitUnderTest/doLetterProcess" type="logic">
+      <obj_property name="ElementShortName">doLetterProcess</obj_property>
+      <obj_property name="ObjectShortName">doLetterProcess</obj_property>
+   </wvobject>
+</wave_config>

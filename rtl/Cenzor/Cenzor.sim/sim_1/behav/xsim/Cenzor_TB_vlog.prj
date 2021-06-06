@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../Cenzor.srcs/sources_1/new/Cenzor.sv" \
+"../../../../Cenzor.srcs/sources_1/new/Word_Comparator.sv" \
+"../../../../Cenzor.srcs/sources_1/new/Cenzor_TB.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
